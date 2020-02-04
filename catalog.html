@@ -26,28 +26,71 @@
 <main>
   <h1>Магазин готовых шаблонов</h1>
   <section>
-    <h2>Фильтр товаров</h2>
-    <!-- Здесь будет форма -->
-    <b>Стоимость:</b>
-    <span>input type range</span>
-    <span>от 0 до 15000</span>
-    <b>Сетка:</b>
-    <!-- input type radio -->
-    <span>Адаптивная</span>
-    <span>Фиксированная</span>
-    <span>Резиновая</span>
-    <b>Особенности:</b>
-    <!-- input type checkbox -->
-    <span>Слайдер</span>
-    <span>Блок преимуществ</span>
-    <span>Новости</span>
-    <span>Галерея</span>
-    <span>Корзина</span>
-    <button type="submit">Показать</button>
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <button type="button">Минимум</button>
+        <button type="button">Максимум</button>
+        <div>Здесь двигаются кнопки</div>
+        <p>
+          <label for="minimum">От</label>
+          <input id="minimum" type="text" name="from" placeholder="0">
+        </p>
+        <p>
+          <label for="maximum">До</label>
+          <input id="maximum" type="text" name="to" placeholder="15000">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li>
+            <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+          </li>
+          <li>
+            <input id="fixed" type="radio" name="grid" value="fixed">
+            <label for="fixed">Фиксированная</label>
+          </li>
+          <li>
+            <input id="rubber" type="radio" name="grid" value="rubber">
+            <label for="rubber">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+        <ul>
+          <li>
+            <input id="slider" type="checkbox" name="slider" checked>
+            <label for="slider">Слайдер</label>
+          </li>
+          <li>
+            <input id="advantages" type="checkbox" name="advantages">
+            <label for="advantages">Блок преимуществ</label>
+          </li>
+          <li>
+            <input id="news" type="checkbox" name="news" checked>
+            <label for="news">Новости</label>
+          </li>
+          <li>
+            <input id="gallery" type="checkbox" name="gallery">
+            <label for="gallery">Галерея</label>
+          </li>
+          <li>
+            <input id="cart" type="checkbox" name="cart">
+            <label for="cart">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+
   </section>
   <section>
   <!-- Блок сортировки -->
-    <h2>Сортировка шаблонов</h2>
+    <h2 class="visually-hidden">Сортировка шаблонов</h2>
     <b>Сортировать:</b>
     <ul>
       <li>
@@ -68,7 +111,7 @@
     </ul>
   </section>
   <section>
-    <h2>Список шаблонов</h2>
+    <h2 class="visually-hidden">Список шаблонов</h2>
     <ul>
       <li>
         <b>Sedonna</b>
@@ -108,7 +151,7 @@
       </li>
     </ul>
   </section>
-  <!-- Паганация -->
+  <!-- Пагинация -->
   <ul>
     <li><a>1</a></li>
     <li><a href="#">2</a></li>
@@ -117,7 +160,7 @@
   <section>
     <!-- Контакты -->
     <h2>Как до нас добраться.</h2>
-    <img src="https://via.placeholder.com/144x41" alt="Адрес на карте: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
+    <img src="img/map.jpg" width="1440" height="416" alt="Адрес на карте: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
     <!-- Контейнер для контактной информации -->
     <div>
       <b>NЁRDS DESIGN STUDIO</b>
@@ -128,7 +171,7 @@
       <p>тел. +7 (812) 275-75-75</p>
       <a href="#">Напишите нам</a>
     </div>
-    <img src="https://via.placeholder.com/190x160" alt="Нердс">
+    <img src="img/map-marker.png" width="231" height="190" alt="Нердс">
   </section>
 </main>
 
