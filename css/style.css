@@ -1,0 +1,345 @@
+body {
+  background-color: white;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+
+
+/*Хедер*/
+.header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: black;
+}
+
+.site-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active {
+  color: black;
+  opacity: 0.3;
+}
+/*Слайдер*/
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-list li:first-child {
+  background-image: url("../img/slide1.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.slider-list li:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.slider-list li:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.slider-list b {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-list p {
+  color: #283136;
+}
+
+.slider-button {
+  color: white;
+  background-color: #fb565a;
+}
+
+.slider-button:hover {
+  background-color: #e74246;
+}
+
+.slider-button:active {
+  background-color: #d7373b;
+  color: #e06366;
+}
+
+.slider-switch {
+  list-style: none;
+}
+
+.slider-switch-button {
+  background-color: white;
+  border: none;
+}
+
+.advantage-list {
+  list-style: none;
+}
+
+.advantage-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantage-item p {
+  color: #283136;
+}
+
+.advantage-item:first-child .advantage-button {
+  color: white;
+  background-color: #fb565a;
+}
+
+.advantage-item:first-child .advantage-button:hover {
+  color: white;
+  background-color: #e74246;
+}
+
+.advantage-item:first-child .advantage-button:active {
+  background-color: #d7373b;
+  color: #e06366;
+}
+
+.advantage-item:nth-child(2) .advantage-button {
+  color: white;
+  background-color: #00ca74;
+}
+
+.advantage-item:nth-child(2) .advantage-button:hover {
+  color: white;
+  background-color: #00bc6c;
+}
+
+.advantage-item:nth-child(2) .advantage-button:active {
+  background-color: #00aa62;
+  color: #4dc491;
+}
+
+.advantage-item:last-child .advantage-button {
+  color: white;
+  background-color: #efc84a;
+}
+
+.advantage-item:last-child .advantage-button:hover {
+  color: white;
+  background-color: #eab534;
+}
+
+.advantage-item:last-child .advantage-button:active {
+  background-color: #e5a722;
+  color: #edc265;
+}
+/*?????*/
+b.promo-text {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+/*?????*/
+p.promo-text {
+  color: #283136;
+}
+/*?????*/
+.design-list-caption,
+.table-caption {
+  text-transform: uppercase;
+}
+/*?????*/
+.design-list {
+  list-style: none;
+  color: #283136;
+}
+/*?????*/
+.data td {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+/*?????*/
+.data span {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.value td {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #283136;
+}
+
+.job-list {
+  list-style: none;
+}
+
+.job-list a {
+  opacity: 0.2;
+}
+
+.job-list a:hover {
+  opacity: 1;
+}
+
+.job-list a:active {
+  opacity: 0.1;
+}
+
+.address-container {
+  background-color: white;
+}
+
+.address-container b {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.address-container p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.contacts-button {
+  color: white;
+  background-color: #fb565a;
+}
+
+.contacts-button:hover {
+  color: white;
+  background-color: #e74246;
+}
+
+.contacts-button:active {
+  background-color: #d7373b;
+  color: #e06366;
+}
+/*Футер*/
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+   background-color: #eeeeee;
+   color: white;
+ }
+
+.social-button:hover {
+  background-color: #e74246;
+  color: white;
+}
+
+.social-button:active {
+  background-color: #d7373b;
+  color: #e37376;
+}
+
+.footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+}
+/*Модальное окно*/
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.modal-form label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.modal-form input[type="text"],
+.modal-form input[type="email"],
+.modal-form textarea[placeholder]{
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+
+  border: 2px solid #d7dcde;
+}
+
+.modal-form textarea {
+  resize: none;
+  border: 2px solid #d7dcde;
+}
+
+.modal-submit {
+  color: white;
+  background-color: #fb565a;
+}
+
+.modal-submit:hover {
+  color: white;
+  background-color: #e74246;
+}
+
+.modal-submit:active {
+  background-color: #d7373b;
+  color: #e37376;
+}
+

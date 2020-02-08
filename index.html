@@ -3,21 +3,32 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс. Главная страница.</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <a>
+<header class="header">
+  <a class="header-logo">
     <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
   </a>
-  <nav>
-    <ul>
-      <li><a>Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
+  <nav class="main-navigation">
+    <ul class="site-navigation">
+      <li>
+        <a>Студия</a>
+      </li>
+      <li>
+        <a href="#">Клиенты</a>
+      </li>
+      <li>
+        <a href="catalog.html">Магазин</a>
+      </li>
+      <li>
+        <a href="#">Контакты</a>
+      </li>
     </ul>
-    <ul>
+    <ul class="user-navigation">
       <li>
         <a href="#">Корзина</a>
       </li>
@@ -25,15 +36,15 @@
   </nav>
 </header>
 
-<main>
+<main class="main">
 
   <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 
-  <section>
+  <section class="slider">
     <!-- Слайдер -->
     <h2 class="visually-hidden">Слайдер</h2>
     <!-- Обертка для содержимого слайда -->
-    <ul>
+    <ul class="slider-list">
       <li>
         <!-- Изображение на слайде фоновое -->
         <b>Долго, дорого, скрупулезно.</b>
@@ -48,80 +59,85 @@
         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
       </li>
     </ul>
-    <a href="#">Узнать больше</a>
+    <a class="button slider-button" href="#">Узнать больше</a>
     <!-- Блок кнопок, переключающий слайды.  -->
-    <ul>
+    <ul class="slider-switch">
       <li>
-        <button type="button">1-й слайд</button>
+        <button class="slider-switch-button current-slide" type="button">1-й слайд</button>
       </li>
       <li>
-        <button type="button">2-й слайд</button>
+        <button class="slider-switch-button" type="button">2-й слайд</button>
       </li>
       <li>
-        <button type="button">3-й слайд</button>
+        <button class="slider-switch-button" type="button">3-й слайд</button>
       </li>
     </ul>
   </section>
-  <section>
+  <section class="advantages">
     <h2 class="visually-hidden">Преимущества</h2>
-    <ul>
-      <li>
+    <ul class="advantage-list">
+      <li class="advantage-item">
         <h3>Веб-сайты</h3>
         <img src="img/illustration-1.png" width="300" height="146" alt="Стилизованное изображение веб-сайта">
         <p>
           Мир никогда не будет прежним после того как увидит ваш сайт!
         </p>
-        <a href="#">Заказать</a>
+        <a class="button advantage-button" href="#">Заказать</a>
       </li>
-      <li>
+      <li class="advantage-item">
         <h3>Приложения</h3>
-        <img src="img/illustration-2.png" width="300" height="146"
-             alt="Стилизованное изображение приложения на смартфоне">
+        <img src="img/illustration-2.png" width="300" height="146" alt="Стилизованное изображение приложения на смартфоне">
         <p>
           Покорите топ-10 приложений в AppStore и Google Play
         </p>
-        <a href="#">Заказать</a>
+        <a class="button advantage-button" href="#">Заказать</a>
       </li>
-      <li>
+      <li class="advantage-item">
         <h3>Презентации</h3>
         <img src="img/illustration-3.png" width="300" height="146" alt="Стилизованное изображение презентации">
         <p>
           Вы даже не подозреваете, насколько вы изумительны!
         </p>
-        <a href="#">Заказать</a>
+        <a class="button advantage-button" href="#">Заказать</a>
       </li>
     </ul>
   </section>
-  <section>
+
+  <section class="promo">
     <!-- Промо-блок -->
     <h2 class="visually-hidden">Наша работа.</h2>
-    <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+    <b class="promo-text">
+      Мы — маленькая, но гордая<br>
+      дизайн-студия из Краснодара.
+    </b>
     <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип Нёрдс">
-    <p>
+    <p class="promo-text">
       Исповедуем принципы минимализма и чистоты. Ставим математический расчет
       превыше креатива. Работаем не покладая рук, как роботы.
     </p>
-    <b>Выполняем заказы на разработку:</b>
-    <ul>
+    <b class="design-list-caption">Выполняем заказы на разработку:</b>
+    <ul class="design-list">
       <li>Веб-сайтов любой сложности</li>
       <li>Мобильных приложений для iOS и Android</li>
       <li>Слайдшоу и видео для корпоративных презентаций</li>
     </ul>
-    <table>
-      <caption><b>с 2004 года Любим точность во всем:</b></caption>
-      <tr>
-        <td>146%</td>
-        <td>100%</td>
-        <td>50%</td>
+    <table class="precise-table">
+      <caption class="table-caption">
+        <b>с 2004 года Любим точность во всем:</b>
+      </caption>
+      <tr class="data">
+        <td>146<span>%</span></td>
+        <td>100<span>%</span></td>
+        <td>50<span>%</span></td>
       </tr>
-      <tr>
+      <tr class="value">
         <td>Уровень самоотдачи</td>
         <td>Соблюдение сроков</td>
         <td>Минимальная предоплата</td>
       </tr>
     </table>
     <h3 class="visually-hidden">Наши клиенты</h3>
-    <ul>
+    <ul class="job-list">
       <li>
         <a href="https://htmlacademy.ru/">
           <img src="img/logo-1.png" width="199" height="68" alt="Логотип сайта HTML Academy">
@@ -144,47 +160,47 @@
       </li>
     </ul>
   </section>
-  <section>
+
+  <section class="contacts">
     <!-- Контакты -->
     <h2 class="visually-hidden">Как до нас добраться.</h2>
     <img src="img/map.jpg" width="1440" height="416" alt="Адрес на карте: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
     <!-- Контейнер для контактной информации -->
-    <div>
+    <div class="address-container">
       <b>NЁRDS DESIGN STUDIO</b>
       <p>
         191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8
       </p>
       <p>тел. +7 (812) 275-75-75</p>
-      <a href="#">Напишите нам</a>
+      <a class="button contacts-button" href="#">Напишите нам</a>
     </div>
-    <!-- ??? -->
     <img src="img/map-marker.png" width="231" height="190" alt="Нердс">
   </section>
 </main>
 
-<footer>
-  <ul>
+<footer class="footer">
+  <ul class="footer-social">
     <li>
-      <a href="#">Вконтакте</a>
+      <a class="social-button" href="#">Вконтакте</a>
     </li>
     <li>
-      <a href="#">Фейсбук</a>
+      <a class="social-button" href="#">Фейсбук</a>
     </li>
     <li>
-      <a href="#">Инстаграм</a>
+      <a class="social-button" href="#">Инстаграм</a>
     </li>
   </ul>
-  <p>Давайте дружить, это выгодно!</p>
+  <b>Давайте дружить, это выгодно!</b>
   <p>Скидка 10% для друзей из социальных сетей.</p>
 </footer>
 <!-- Popup  -->
-<section>
+<section class="modal">
   <h2>Напишите нам</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
+  <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label for="user-name">Ваше имя:</label>
-      <input id="user-name" type="email" name="name" placeholder="Имя Фамилия">
+      <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
     </p>
     <p>
       <label for="user-email">Ваш e-mail:</label>
@@ -192,11 +208,11 @@
     </p>
     <p>
       <label for="user-message">Текст письма:</label>
-      <textarea id="user-message" name="user-message" rows="5" cols="100">В свободной форме</textarea>
+      <textarea id="user-message" name="user-message" rows="5" cols="100" placeholder="В свободной форме"></textarea>
     </p>
-    <button type="submit">Отправить</button>
+    <button class="button modal-submit" type="submit">Отправить</button>
   </form>
-  <button type="button">Закрыть</button>
+  <button class="modal-close" type="button">Закрыть</button>
 </section>
 
 </body>
