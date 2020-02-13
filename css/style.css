@@ -1,3 +1,4 @@
+/*Общие стили*/
 body {
   background-color: white;
 
@@ -15,7 +16,6 @@ a {
   text-decoration: none;
 }
 
-
 .button {
   font-size: 16px;
   line-height: 18px;
@@ -26,9 +26,6 @@ a {
 
   border: none;
 }
-
-
-
 /*Хедер*/
 .header {
   background-color: #eeeeee;
@@ -59,6 +56,8 @@ a {
   color: black;
   opacity: 0.3;
 }
+/*Хедер. Конец*/
+/*Index-Main*/
 /*Слайдер*/
 .slider {
   background-color: #eeeeee;
@@ -118,7 +117,8 @@ a {
   background-color: white;
   border: none;
 }
-
+/*Слайдер. Конец*/
+/*Преимущества*/
 .advantage-list {
   list-style: none;
 }
@@ -178,33 +178,33 @@ a {
   background-color: #e5a722;
   color: #edc265;
 }
-/*?????*/
+/*Промо-блок*/
 b.promo-text {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
-/*?????*/
+
 p.promo-text {
   color: #283136;
 }
-/*?????*/
+
 .design-list-caption,
 .table-caption {
   text-transform: uppercase;
 }
-/*?????*/
+
 .design-list {
   list-style: none;
   color: #283136;
 }
-/*?????*/
+
 .data td {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
 }
-/*?????*/
+
 .data span {
   font-size: 30px;
   line-height: 30px;
@@ -234,7 +234,7 @@ p.promo-text {
 .job-list a:active {
   opacity: 0.1;
 }
-
+/*Блок  контактной информации*/
 .address-container {
   background-color: white;
 }
@@ -266,6 +266,199 @@ p.promo-text {
   background-color: #d7373b;
   color: #e06366;
 }
+/*Index-Main.Конец.*/
+/*Catalog-Main*/
+.catalog-title {
+  background-color: #eeeeee;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-transform: unset;
+}
+
+/*Фильтры*/
+.range-filter,
+.radio-filter,
+.checkbox-filter {
+  border: none;
+}
+
+.range-filter legend,
+.radio-filter legend,
+.checkbox-filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.range-wrapper {
+  background-color: #eeeeee;
+}
+
+.range-button {
+  border: none;
+  background-color: white;
+}
+
+.range-scale {
+  background-color: #00ca74;
+}
+
+.range-filter label {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #283136;
+  font-weight: 400;
+}
+
+.range-filter input[type="text"] {
+  font: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+
+  border: none;
+  background-color: #eeeeee;
+}
+
+.radio-filter-list,
+.checkbox-filter-list {
+  list-style: none;
+}
+
+.radio-filter-list label,
+.checkbox-filter-list label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+  font-weight: 500;
+}
+
+.filter-button-submit {
+  color: #000000;
+  background-color: #eeeeee;
+}
+/*Блок сортировки*/
+.sort-list {
+  list-style: none;
+}
+
+.sort-list a {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+
+  opacity: 0.3;
+}
+
+.sort-list .active-sort {
+  opacity: 1;
+}
+
+.sort-list a:hover {
+  opacity: 0.6;
+}
+
+.sort-list a:active {
+  opacity: 1;
+}
+/*Блок сортировки.Конец*/
+/*Список шаблонов*/
+.templates-list {
+  list-style: none;
+}
+
+.template-info {
+  background-color: #eeeeee;
+  display: none;
+}
+
+.templates-list li:hover>.template-info {
+  display: block;
+}
+
+.template-link {
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.template-link:hover {
+  color: #fb565a;
+}
+
+.template-link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.template-info p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.template-button {
+  color: white;
+  background-color: #fb565a;
+}
+
+.template-button:hover {
+  color: white;
+  background-color: #e74246;
+}
+
+.template-button:active {
+  color: white;
+  background-color: #d7373b;
+}
+/*Список шаблонов.Конец*/
+/*Пагинация*/
+.pagination-list {
+  list-style: none;
+}
+
+.current-pagination {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+
+  border: 2px solid #dbdbdb;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.pagination-button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.pagination-link:hover,
+.pagination-button:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-link:active,
+.pagination-button:active {
+  color: #a6a6a6;
+
+  background-color: #d5d5d5;
+  border-top: 2px solid #a6a6a6;
+}
+/*Catalog-Main.Конец*/
 /*Футер*/
 .footer-social {
   list-style: none;
@@ -317,10 +510,26 @@ p.promo-text {
   font: inherit;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: #a1a1a1;
   font-weight: 400;
 
   border: 2px solid #d7dcde;
+}
+
+.modal-form input[type="text"]:hover,
+.modal-form input[type="email"]:hover,
+.modal-form textarea[placeholder]:hover{
+  color: #a1a1a1;
+
+  border: 2px solid #b4b9bb;
+}
+
+.modal-form input[type="text"]:focus,
+.modal-form input[type="email"]:focus,
+.modal-form textarea[placeholder]:focus{
+  color: #a1a1a1;
+
+  border: 2px solid #444444;
 }
 
 .modal-form textarea {
