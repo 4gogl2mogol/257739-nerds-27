@@ -257,11 +257,12 @@ p.promo-text {
 }
 
 .contact-phone,
-.address-container p {
+.address-container address {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+  font-style: normal;
 }
 /*не по style-guide, но в соответствии с критерием Д29*/
 .contact-phone:hover {
