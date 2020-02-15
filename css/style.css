@@ -17,15 +17,21 @@ a {
 }
 
 .button {
+  vertical-align: middle;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
 
   border: none;
 }
+
+img {
+  max-width: 100%
+}
+
 /*Хедер*/
 .header {
   background-color: #eeeeee;
@@ -235,6 +241,11 @@ p.promo-text {
   opacity: 0.1;
 }
 /*Блок  контактной информации*/
+.contacts {
+  /*Фон в соответствии с критериес Д10*/
+  background-color: #eeeeee;
+}
+
 .address-container {
   background-color: white;
 }
@@ -245,11 +256,22 @@ p.promo-text {
   text-transform: uppercase;
 }
 
+.contact-phone,
 .address-container p {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+}
+/*не по style-guide, но в соответствии с критерием Д29*/
+.contact-phone:hover {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.contact-phone:active {
+  color: #000000;
+  opacity: 1;
 }
 
 .contacts-button {
