@@ -16,9 +16,34 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/*visually-hidden*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   vertical-align: middle;
-
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -28,24 +53,50 @@ a {
   border: none;
 }
 
-img {
-  max-width: 100%
-}
-
 /*Хедер*/
 .header {
+  width: auto;
+
   background-color: #eeeeee;
 }
 
+.header-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 798px;
+
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.site-navigation,
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 438px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
 .user-navigation {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -66,11 +117,23 @@ img {
 /*Index-Main*/
 /*Слайдер*/
 .slider {
+  width: auto;
+
   background-color: #eeeeee;
 }
 
 .slider-list {
+  width: 1200px;
+  margin: 0 auto;
+
   list-style: none;
+}
+
+.slider-list li {
+  display: flex;
+  flex-direction: column;
+  min-height: 430px;
+  padding: 80px 20px 0 20px;
 }
 
 .slider-list li:first-child {
@@ -80,28 +143,38 @@ img {
 }
 
 .slider-list li:nth-child(2) {
+  display: none;
+
   background-image: url("../img/slide2.png");
   background-position: right center;
   background-repeat: no-repeat;
 }
 
 .slider-list li:nth-child(3) {
+  display: none;
+
   background-image: url("../img/slide3.png");
   background-position: right center;
   background-repeat: no-repeat;
 }
 
 .slider-list b {
+  width: 380px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
 }
 
 .slider-list p {
+  width: 360px;
+
   color: #283136;
 }
 
 .slider-button {
+  display: none;
+
   color: white;
   background-color: #fb565a;
 }
@@ -116,6 +189,8 @@ img {
 }
 
 .slider-switch {
+  display: none;
+
   list-style: none;
 }
 
@@ -125,8 +200,23 @@ img {
 }
 /*Слайдер. Конец*/
 /*Преимущества*/
+.advantages {
+  width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
 .advantage-list {
+  display: flex;
+  padding: 0 40px 80px 0;
+  justify-content: space-between;
+
   list-style: none;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.advantage-item {
+  width: 300px;
 }
 
 .advantage-list h3 {
@@ -185,6 +275,20 @@ img {
   color: #edc265;
 }
 /*Промо-блок*/
+.promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto 80px auto;
+  padding: 0 20px;
+}
+
+.promo-text-wrapper {
+  width: 660px;
+}
+
 b.promo-text {
   font-size: 45px;
   line-height: 45px;
@@ -195,14 +299,25 @@ p.promo-text {
   color: #283136;
 }
 
+.design-list-wrapper {
+  width: 460px;
+}
+
+.precise-table {
+  width: 360px;
+}
+
 .design-list-caption,
 .table-caption {
   text-transform: uppercase;
 }
 
 .design-list {
-  list-style: none;
+  padding: 0;
+
   color: #283136;
+
+  list-style: none;
 }
 
 .data td {
@@ -226,7 +341,19 @@ p.promo-text {
 }
 
 .job-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  min-height: 184px;
+  margin: 0;
+  padding: 0 30px 0 45px;
+
   list-style: none;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .job-list a {
@@ -242,11 +369,21 @@ p.promo-text {
 }
 /*Блок  контактной информации*/
 .contacts {
-  /*Фон в соответствии с критериес Д10*/
-  background-color: #eeeeee;
+  width: 1440px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
+.contacts-container {
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .address-container {
+  width: 319px;
+  padding: 50px 47px;
+
   background-color: white;
 }
 
@@ -483,7 +620,23 @@ p.promo-text {
 }
 /*Catalog-Main.Конец*/
 /*Футер*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 70px 235px 70px 20px;
+  margin: 0 auto;
+}
+
 .footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -515,11 +668,27 @@ p.promo-text {
   color: #444444;
 }
 /*Модальное окно*/
+.modal {
+  width: 960px;
+  padding: 74px 100px 84px 100px;
+
+  /*Временно */
+  outline: 1px solid brown;
+}
+
 .modal h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  text-align: left;
 }
+
+.modal-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 
 .modal-form label {
   font-size: 16px;
