@@ -56,8 +56,14 @@ input[type="radio"].visually-hidden {
 /*Хедер*/
 .header {
   width: auto;
+  margin: 0;
+  padding: 0;
 
   background-color: #eeeeee;
+}
+
+.header-logo {
+  line-height: 12px;
 }
 
 .header-container {
@@ -125,6 +131,7 @@ input[type="radio"].visually-hidden {
 .slider-list {
   width: 1200px;
   margin: 0 auto;
+  padding: 0;
 
   list-style: none;
 }
@@ -132,11 +139,12 @@ input[type="radio"].visually-hidden {
 .slider-list li {
   display: flex;
   flex-direction: column;
-  min-height: 430px;
-  padding: 80px 20px 0 20px;
+  padding: 80px 20px 165px 20px;
 }
 
 .slider-list li:first-child {
+  /*display: none;*/
+
   background-image: url("../img/slide1.png");
   background-position: right center;
   background-repeat: no-repeat;
@@ -159,7 +167,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-list b {
-  width: 380px;
+  margin: 0 0 10px 0;
 
   font-size: 55px;
   line-height: 55px;
@@ -167,9 +175,34 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-list p {
-  width: 360px;
+  margin: 0;
+  padding: 0;
 
   color: #283136;
+}
+
+.slider-list li:first-child > b {
+  width: 380px;
+}
+
+.slider-list li:first-child > p {
+  width: 360px;
+}
+
+.slider-list li:nth-child(2) > b {
+  width: 515px;
+}
+
+.slider-list li:nth-child(2) > p {
+  width: 410px;
+}
+
+.slider-list li:last-child > b {
+  width: 410px;
+}
+
+.slider-list li:last-child > p {
+  width: 345px;
 }
 
 .slider-button {
